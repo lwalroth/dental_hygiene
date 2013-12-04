@@ -1,0 +1,13 @@
+<% provide(:title, 'Services') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dental Hygiene on the Move | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Services</h1>
+    <p>
+      This is the services page for Kari's website
+    </p>
+  </body>
+</html>

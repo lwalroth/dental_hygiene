@@ -1,0 +1,39 @@
+require 'spec_helper'
+
+describe "Static Pages" do
+  
+  describe "Home page" do
+    it "should have the content 'Dental Hygiene on the Move'" do
+      visit '/static_pages/home'
+      expect(page).to have_content('Dental Hygiene on the Move')
+    end
+  end
+
+  describe "Contact page" do
+    it "should have the content 'Dental Hygiene on the Move'" do
+      visit '/static_pages/contact'
+      expect(page). to have_content('Dental Hygiene on the Move')
+    end
+  end
+
+  describe "About page" do
+    it "should have the content 'Kari Flaxey'" do
+      visit '/static_pages/about'
+      expect(page).to have_content('Kari Flaxey')
+    end
+  end
+
+  describe "Services page" do
+    it "should have the content 'Services'" do
+      visit '/static_pages/services'
+      expect(page).to have_content('Services')
+    end
+  end
+
+  describe "Testimonials page" do
+    it "should have the content 'Testimonials'" do
+      visit '/static_pages/testimonials'
+      expect(page).to have_content('Testimonials')
+    end
+  end
+end

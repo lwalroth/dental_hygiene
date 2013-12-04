@@ -1,0 +1,13 @@
+<% provide(:title, 'Contact') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dental Hygiene on the Move | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Dental Hygiene on the Move</h1>
+    <p>
+      This is the contact page for Kari's website
+    </p>
+  </body>
+</html>
