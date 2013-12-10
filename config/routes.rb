@@ -1,9 +1,22 @@
 DentalHygiene::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/contact"
-  get "static_pages/about"
-  get "static_pages/services"
-  get "static_pages/testimonials"
+  get "users/new"
+
+  root 'static_pages#home'
+  match '/signup',    to: 'users#new',    via: 'get'
+  match '/services',    to: 'static_pages#services',    via: 'get'
+  match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/testimonials', to: 'static_pages#testimonials', via: 'get'
+  match '/mouthguards', to:  'static_pages#mouthguards', via: 'get'
+  match '/whitening_trays', to:  'static_pages#whitening_trays', via: 'get'
+  match '/scaling', to: 'static_pages#scaling', via: 'get'
+  match '/polishing', to: 'static_pages#polishing', via: 'get'
+  match '/gumassessment', to: 'static_pages#gumassessment', via: 'get'
+  match '/fluoride', to: 'static_pages#fluoride', via: 'get'
+  match '/oralexamination', to: 'static_pages#oralexamination', via: 'get'
+  match '/cancerscreening', to: 'static_pages#cancerscreening', via: 'get'
+  match '/denturecleaning', to: 'static_pages#denturecleaning', via: 'get'
+  match '/referrals', to: 'static_pages#referrals', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

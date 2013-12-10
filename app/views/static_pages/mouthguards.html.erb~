@@ -1,0 +1,54 @@
+<div class = "container">
+<%= render 'static_pages/servicessidebar' %> 
+		
+  <div class="col-sm-8 ">
+    <p><b>Why use a custom Mouth Guard?</b></p>
+		  
+		  The purpose of the sports mouth guard is to act as a shock absorber in the mouth to protect the teeth
+		  from excessive forces.  The mouth guard also protects your head and brain from concussion if the blow is onto
+		  the lower jaw.<br>
+		  <br>
+		  
+		  Well made mouth guards adapt smoothly to the upper teeth and gums, staying firmly in place, even when speaking,
+		  breathing heavily or playing sports very actively.<br>
+		  <br>
+		  <p><b>The Procedure</b></p>
+		  
+		  A custom mouth guard procedure is very quick and lasts approximately 10 minutes. The dental Hygienist will take 
+		  an upper impression, you will choose the color of your mouth guard and it will be ready in approximately one week.
+		  Dental Hygiene on the move offers a variety of colors for all ages.<br>
+		  <br>
+		  <p><b>Cost</b></p>
+		  
+		   $40.00 - Per Mouth Guard<br>
+		  <br>
+		  
+  </div>
+  <div id ="myCarousel" class="carousel slide col-sm-8 " >
+    <div class="carousel-inner ">
+      <div class="active item">
+        <div class="col-sm-6">
+          <img width="350" height="300" src="mouthguards2.jpg" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img src="http://placehold.it/350x300" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="col-sm-6">
+          <img src="http://placehold.it/350x300" alt="">
+        </div>
+        <div class="col-sm-4">
+          <img src="http://placehold.it/350x300" alt="">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control left carouselControlOverride" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+        
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="col-sm-4 sideborderOverride ">
+  <div class="well sidebar-nav ">
+    <ul class="nav">
+      <li><p>Services</p></li>
+      <li class="active"><%= link_to "Mouthguards", mouthguards_path %></li>
+      <li><%= link_to "Whitening Trays", whitening_trays_path %></li>
+      <br>
+      <li><p>Mobile Professional Dental Cleaning Includes:</p></li>
+      <li><%= link_to "Scaling", scaling_path %></li>
+      <li><%= link_to "Polishing", polishing_path %></li>
+      <li><%= link_to "Gum Assessment", gumassessment_path %></li>
+      <li><%= link_to "Fluoride", fluoride_path %></li>
+      <li><%= link_to "Intra/Extra Oral Examination", oralexamination_path %></li>
+      <li><%= link_to "Oral Cancer Screening", cancerscreening_path %></li>
+      <li><%= link_to "Denture Cleaning", denturecleaning_path %></li>
+      <li><a href="referrals.html">Referrals to other healthcare professionals</a></li>
+    </ul>
+  </div>
+</div>
+
+

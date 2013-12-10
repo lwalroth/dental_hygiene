@@ -1,64 +1,129 @@
 require 'spec_helper'
 
 describe "Static Pages" do
-  
-  describe "Home page" do
-    it "should have the content 'Dental Hygiene on the Move'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Dental Hygiene on the Move')
-    end
 
-    it "should have the title 'Home'" do
-      visit '/static_pages/home'
-      expect(page).to have_title("Dental Hygiene on the Move | Home")
-    end
+  
+  subject { page }  
+
+  describe "Home page" do
+    before { visit root_path }
+
+    it { should have_content('Dental Hygiene on the Move') }
+    it { should have_title(full_title('')) }
+    it { should_not have_title('| Home') }
+    
   end
 
   describe "Contact page" do
-    it "should have the content 'Dental Hygiene on the Move'" do
-      visit '/static_pages/contact'
-      expect(page). to have_content('Dental Hygiene on the Move')
-    end
+    before { visit contact_path }
 
-    it "should have the title 'Contact'" do
-      visit '/static_pages/contact'
-      expect(page).to have_title("Dental Hygiene on the Move | Contact")
-    end
+    it { should have_content('Contact') }
+    it { should have_title(full_title('Contact')) }
+    
   end
 
   describe "About page" do
-    it "should have the content 'Kari Flaxey'" do
-      visit '/static_pages/about'
-      expect(page).to have_content('Kari Flaxey')
-    end
+    before { visit about_path }
 
-    it "should have the title 'About'" do
-      visit '/static_pages/about'
-      expect(page).to have_title("Dental Hygiene on the Move | About")
-    end
+    it { should have_content('About') }
+    it { should have_title(full_title('About')) }
+    
   end
 
   describe "Services page" do
-    it "should have the content 'Services'" do
-      visit '/static_pages/services'
-      expect(page).to have_content('Services')
-    end
+    before { visit services_path }
 
-    it "should have the title 'Services'" do
-      visit '/static_pages/services'
-      expect(page).to have_title("Dental Hygiene on the Move | Services")
-    end
+    it { should have_content('Services') }
+    it { should have_title(full_title('Services')) }
+    
   end
 
   describe "Testimonials page" do
-    it "should have the content 'Testimonials'" do
-      visit '/static_pages/testimonials'
-      expect(page).to have_content('Testimonials')
-    end
+    before { visit testimonials_path }
 
-    it "should have the title 'Testimonials'" do
-      visit '/static_pages/testimonials'
-      expect(page).to have_title("Dental Hygiene on the Move | Testimonials")
-    end
+    it { should have_content('Testimonials') }
+    it { should have_title(full_title('Testimonials')) }
+    
   end
+
+  describe "Mouth Guards page" do
+    before { visit mouthguards_path }
+    
+    it { should have_content('Mouth Guards') }
+    it { should have_title(full_title('Mouth Guards')) }
+  end
+
+  describe "Whitening Trays page" do
+    before { visit whitening_trays_path }
+    
+    it { should have_content('Whitening Trays') }
+    it { should have_title(full_title('Whitening Trays')) }
+  end
+
+  describe "Scaling page" do
+    before { visit scaling_path }
+    
+    it { should have_content('Scaling') }
+    it { should have_title(full_title('Scaling')) }
+  end
+
+  describe "Polishing page" do
+    before { visit polishing_path }
+    
+    it { should have_content('Scaling') }
+    it { should have_title(full_title('Scaling')) }
+  end
+
+  describe "Gum Assessment page" do
+    before { visit gumassessment_path }
+    
+    it { should have_content('Gum Assessment') }
+    it { should have_title(full_title('Gum Assessment')) }
+  end
+
+  describe "Fluoride page" do
+    before { visit fluoride_path }
+    
+    it { should have_content('Fluoride') }
+    it { should have_title(full_title('Fluoride')) }
+  end
+
+  describe "Intra/Extra Oral Examination page" do
+    before { visit oralexamination_path }
+    
+    it { should have_content('Intra/Extra Oral Examination') }
+    it { should have_title(full_title('Intra/Extra Oral Examination')) }
+  end
+
+  describe "Oral Cancer Screening page" do
+    before { visit cancerscreening_path }
+    
+    it { should have_content('Oral Cancer Screening') }
+    it { should have_title(full_title('Oral Cancer Screening')) }
+  end
+
+  describe "Denture Cleaning page" do
+    before { visit denturecleaning_path }
+    
+    it { should have_content('Denture Cleaning') }
+    it { should have_title(full_title('Denture Cleaning')) }
+  end
+
+  describe "Referrals page" do
+    before { visit referrals_path }
+    
+    it { should have_content('Referrals') }
+    it { should have_title(full_title('Referrals')) }
+  end
+
+
+
+
+
+
+
+
+
+
+
 end

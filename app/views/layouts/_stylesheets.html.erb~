@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+    <title>My First Bootstrap project</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link href="http://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="less/mixins.less">
+	
+    <style> 
+    body { 
+      padding-top: 270px;
+      padding-bottom: 50px;
+    } 
+    </style> 

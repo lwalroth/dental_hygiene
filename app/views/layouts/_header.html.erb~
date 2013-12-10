@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row titleOverride">
+    <h1>Dental Hygiene on the Move</h1><br>
+    <br>
+  </div>
+  <div class="navbar  textOverride navOverride navOverride5">
+    <div class="navbar-inner">
+      <ul class="nav nav-tabs  nav-justified  navOverride2 navOverride3 navOverride4 navOverride6 ">
+        <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+
+        <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
+
+        <li><%= link_to_unless_current("Contact", contact_path) %></li>
+        <li><%= link_to_unless_current("Services", services_path) %></li>
+        <li><%= link_to_unless_current("Testimonials", testimonials_path) %></li>
+        <li><%= link_to "Sign in", '#' %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+

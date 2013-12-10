@@ -1,0 +1,32 @@
+<br>
+
+<div id="footer">
+  
+  <div class = "container">
+    <div class="row">
+      <div class="col-sm-4 textSizeOverride2">
+        
+        <%= link_to "Home", root_path %></li>&nbsp;|&nbsp;
+	<%= link_to "About", about_path %></li>&nbsp;|&nbsp;
+	<%= link_to "Services", services_path %></li>&nbsp;|&nbsp;
+	<%= link_to "Contact", contact_path %></li>&nbsp;|&nbsp;
+      </div>
+			  
+      <div class="col-sm-4 customOverride">
+        <p>Connect with us on Facebook!</p>
+	  <p>
+	  <a href="https://www.facebook.com/pages/Dental-Hygiene-on-the-Move/261016656970"><img width='10%' src="facebook.png" alt=""></a>
+	  <br>
+	  <br>
+	  &copy Dental Hygiene on the Move 2013
+	  </p>   
+
+      </div>
+      <div class="col-sm-4 textSizeOverride2 customOverride ">
+        275 Bradley Street | Haileybury, ON | P0J 1K0<br />
+	(705) 648-3740 | <a href="mailto:kari.flaxey@gmail.com"> kari.flaxey@gmail.com
+      </div>
+    </div>
+
+</div>  
+</div>		 

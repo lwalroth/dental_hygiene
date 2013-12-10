@@ -1,13 +1,16 @@
-<% provide(:title, 'Services') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Dental Hygiene on the Move | <%= yield(:title) %></title>
-  </head>
-  <body>
-    <h1>Services</h1>
-    <p>
-      This is the services page for Kari's website
-    </p>
-  </body>
-</html>
+<div class = "container">
+<%= render 'static_pages/servicessidebar' %>
+<div class="col-sm-8 customOverride">
+  <br>
+  <p>Dental Hygiene on the Move provides a full line of services for all of your dental needs. Whether its a custom sports mouth guard or a teeth cleaning, we pride ourselves on being up-to-date with the latest technology and our focus on making you, the patient, always feel comfortable. Please click on any of the services to your left to learn more and please note that we do follow the Ontario Hygiene fee guide.</p>
+  <p>Currently Kari is offering Custom Sports Mouth Guard and the custom whitening trays and take-home kits. 
+     At this time she is accepting day, evening and weekends appointments and will travel between Kirkland Lake and Temagami.  If you're not certain that your area is within the travel limitations, please contact Kari and she will gladly assess whether she is able to come to you.</p>
+  <p>The Mobile professional dental cleaning will only be available in the fall of 2014. The exact date will be announced when it has been decided.</p>
+  <br>
+  <p><b><h2>Dental Insurance Plans are accepted!</h2></b></p>
+  <br>
+  <img width="300" height="300" src="/assets/mav.jpg"/>
+  <img width="300" height="300" src="/assets/inaction.jpg"/>
+  
+</div>
+</div>

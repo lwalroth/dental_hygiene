@@ -1,0 +1,53 @@
+<div class= "container">
+<%= render 'static_pages/servicessidebar' %>
+<div class="col-sm-8 ">
+		  <p><b>Custom Made Whitening Trays</b></p>
+		  <p>Dental Hygiene on the move offers custom made whitening trays for a visibly whiter 
+		  smile in one day and your whitest healthiest smile in seven to fourteen days. For the 
+		  prodecure Kari uses Philips Zoom which are the only at-home whitening products to contain 
+		  amorphous calcium phosphate (ACP), which is clinically proven to reduce sensitivity, protect 
+		  enamel and help improve the luster and smoothness of the teeth.</p>
+		  
+		  <p>Kari will create a custom tray made just for you and will tailor the formula concentration 
+		  and wear times to your sensitivity and lifestyle.</p>
+		  <br>
+		  <p><b>Difference between store bought and professional whitening trays?</b></p>
+		  
+		  Store bought bleaching kits do not include a good custom fitted tray. They use a standard one-size fits all tray,
+		  whereas the ones Dental Hygiene on the Move provides to you are custom fitted to your teeth. Because of this, the bleaching
+		  process takes longer and is less effective.<br>
+          <br>
+		 		  
+		</div>
+	  
+	  
+	  <div id ="myCarousel" class="carousel slide col-sm-8 " >
+	    
+	    
+		<div class="carousel-inner ">
+		  <div class="active item">
+            <div class="col-sm-6">
+              <img width="350" height="300" src="/assets/whitening.jpg" alt="">
+            </div>
+            <div class="col-sm-4">
+              <img width="350" height="300" src="http://www.teethwhiteningathome.com/wp-content/uploads/2013/01/white-teeth.jpg" alt="">
+            </div>
+          </div>
+          <div class="item">
+            <div class="col-sm-6">
+              <img width="350" height="300" src="http://adkinsdentalmedicine.com/wp-content/uploads/2013/05/zoom-before-and-after.jpg" alt="">
+            </div>
+            <div class="col-sm-4">
+              <img width="350" height="300" src="/assets/zoom.jpg" alt="">
+            </div>
+          </div>
+        </div>
+		 <a class="carousel-control left carouselControlOverride" href="#myCarousel" data-slide="prev">
+		   <span class="icon-prev"></span>
+		 </a>
+		 <a class="carousel-control right" href="#myCarousel" data-slide="next">
+		   <span class="icon-next"></span>
+		 </a>
+        
+       </div>
+</div>
