@@ -25,8 +25,8 @@ describe "Static Pages" do
   describe "About page" do
     before { visit about_path }
 
-    it { should have_content('About') }
-    it { should have_title(full_title('About')) }
+    it { should have_content('Kari Flaxey') }
+    it { should have_title(full_title('Kari Flaxey')) }
     
   end
 
@@ -41,16 +41,16 @@ describe "Static Pages" do
   describe "Testimonials page" do
     before { visit testimonials_path }
 
-    it { should have_content('Testimonials') }
-    it { should have_title(full_title('Testimonials')) }
+    it { should have_content('What People Are Saying About Us!') }
+    it { should have_title(full_title('What People Are Saying About Us!')) }
     
   end
 
   describe "Mouth Guards page" do
     before { visit mouthguards_path }
     
-    it { should have_content('Mouth Guards') }
-    it { should have_title(full_title('Mouth Guards')) }
+    it { should have_content('Mouth Guard') }
+    it { should have_title(full_title('Custom Sports Mouth Guards')) }
   end
 
   describe "Whitening Trays page" do
@@ -70,8 +70,8 @@ describe "Static Pages" do
   describe "Polishing page" do
     before { visit polishing_path }
     
-    it { should have_content('Scaling') }
-    it { should have_title(full_title('Scaling')) }
+    it { should have_content('Polishing') }
+    it { should have_title(full_title('Polishing')) }
   end
 
   describe "Gum Assessment page" do

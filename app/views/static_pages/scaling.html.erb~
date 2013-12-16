@@ -1,4 +1,5 @@
 <div class = "container">
+<%= render 'static_pages/servicessidebar' %>
   <div class="col-sm-8 text-center colOverride-sm-8  ">
   Available in the Fall of 2014!
   </div>

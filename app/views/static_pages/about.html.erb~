@@ -1,11 +1,11 @@
-<%= render 'layouts/header' => 'navbar', :locals => { :action => "About" } %>
+<% provide(:title, 'About') %>
 <div class="container">
 <div class="row">
 		  <div class="col-md-6">
 		    <p><img width="550" height="500" src="http://media.merchantcircle.com/5116226/Dentist-Oklahoma-City_full.jpeg" alt = "" />
 		  </div>
 		  <div class="col-md-6">
-		    <h2>Kari Flaxey</h2>
+		    <h2>About Kari Flaxey</h2>
 			Registered Dental Hygienist<br>
 			<br>
 			Kari graduated with honours from Canadore College in North Bay in 2007.  She began practicing in her home town of 
