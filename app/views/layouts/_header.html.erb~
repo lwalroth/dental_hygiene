@@ -10,10 +10,29 @@
 
         <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
 
-        <li><%= link_to_unless_current("Contact", contact_path) %></li>
-        <li><%= link_to_unless_current("Services", services_path) %></li>
-        <li><%= link_to_unless_current("Testimonials", testimonials_path) %></li>
-        <li><%= link_to "Sign in", '#' %></li>
+        <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+        <li class="<%= 'active' if current_page?(services_path) %>"><%= link_to "Services", services_path %></li>
+       <li class="<%= 'active' if current_page?(testimonials_path) %>"><%= link_to "Testimonials", testimonials_path %></li>
+
+       <% if signed_in? %>
+         <li><%= link_to "Users", '#' %></li>
+         <li id="dropdownMenu" class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             Account <b class="caret"></b>
+           </a>
+           <ul class="dropdown-menu pull-right">
+             <li><%= link_to "Profile", current_user %></li>
+             <li><%= link_to "Settings", '#' %></li>
+             <li class="divider"></li>
+             <li>
+               <%= link_to "Sign out", signout_path, method: "delete" %>
+             </li>
+           </ul>
+         </li>
+        <% else %>
+          <li><%= link_to "Sign in", signin_path %></li>
+        <% end %>
+
       </ul>
     </div>
   </div>
